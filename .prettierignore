@@ -1,0 +1,19 @@
+# custom
+.github
+
+# from .gitignore
+temp
+.vscode
+node_modules
+coverage
+dist
+coverage
+.DS_Store
+.cache
+.env*local
+.fusebox
+.dist-dev
+.sessions
+yarn-error.log
+trash
+.idea/

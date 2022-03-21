@@ -1,0 +1,15 @@
+temp
+.vscode
+node_modules
+dist
+coverage
+.DS_Store
+.cache
+.env*local
+.fusebox
+.dist-dev
+.sessions
+yarn-error.log
+trash
+.idea/
+coverage

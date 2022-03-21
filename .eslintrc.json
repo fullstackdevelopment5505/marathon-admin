@@ -1,0 +1,61 @@
+{
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint/eslint-plugin", "testing-library"],
+  "rules": {
+    "semi": ["error", "always"],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "ignoreRestSiblings": true,
+        "args": "after-used"
+      }
+    ],
+    "testing-library/await-async-query": "error",
+    "testing-library/no-await-sync-query": "error",
+    "@typescript-eslint/no-explicit-any": [
+      "error",
+      {
+        "fixToUnknown": true
+      }
+    ],
+
+    "class-methods-use-this": "warn",
+    "testing-library/no-debug": "warn",
+
+    "react/prop-types": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "no-unused-vars": "off",
+
+    // DISABLED RULES - ENABLE LATER
+    "react/display-name": "off"
+  },
+  "env": {
+    "jest": true,
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    // globals, mainly used for debugging data
+    // TODO: remove, or clarify proper use
+    "assets": true,
+    "events": true,
+    "marathon": true,
+    "fetcher": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ]
+}
